@@ -1,6 +1,6 @@
 
-const supabaseUrl = 'URL_SUPABASE'
-const supabaseKey = 'KEY_SUPABASE'
+const supabaseUrl = 'https://cgeegfrrixpasggjrbzt.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNnZWVnZnJyaXhwYXNnZ2pyYnp0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUyNTIwNzgsImV4cCI6MjA2MDgyODA3OH0.hkO5j8ejfA6DN9iT8L2xDGbLE5HR0GE9evKMLKcOI2E'
 const supabase = supabase.createClient(supabaseUrl, supabaseKey)
 
 async function cadastrarUsuario() {
