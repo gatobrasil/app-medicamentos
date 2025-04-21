@@ -7,14 +7,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="cadastro-container">
     <h2>Cadastro de Usuário</h2>
     <input type="text" id="nome" placeholder="Nome">
     <input type="email" id="email" placeholder="Email">
     <input type="password" id="senha" placeholder="Senha">
     <button onclick="cadastrarUsuario()">Cadastrar</button>
+    <p>Já tem conta? <a href="#" onclick="mostrarLogin()">Faça login</a></p>
+  </div>
 
-    <h2>Adicionar Medicamento</h2>
+  <div class="container" id="login-container" style="display:none;">
+    <h2>Login</h2>
+    <input type="email" id="login_email" placeholder="Email">
+    <input type="password" id="login_senha" placeholder="Senha">
+    <button onclick="fazerLogin()">Entrar</button>
+  </div>
+
+  <div class="container" id="painel-container" style="display:none;">
+    <h2>Bem-vindo!</h2>
+    <div id="medicamentos-lista"></div>
+
+    <h3>Adicionar Medicamento</h3>
     <input type="text" id="nome_medicamento" placeholder="Medicamento">
     <input type="text" id="dose" placeholder="Dose">
     <input type="time" id="horario">
